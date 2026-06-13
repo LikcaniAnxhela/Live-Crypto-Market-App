@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="26dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="720dp">
+
+        <TextView
+            android:text="CryptoPulse"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Night market dashboard for crypto prices"
+            android:textColor="@color/text_soft"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/card_glow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Welcome back"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Sign in with your saved account to continue."
+                android:textColor="@color/text_soft"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/usernameInput"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_soft"
+                android:background="@drawable/input_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:hint="Password"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_soft"
+                android:inputType="textPassword"
+                android:background="@drawable/input_bg"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/rememberCheck"
+                android:text="Remember me"
+                android:textColor="@color/text_soft"
+                android:buttonTint="@color/cyan"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+            <Button
+                android:id="@+id/signupButton"
+                android:text="Create Account"
+                android:textColor="@color/cyan"
+                android:backgroundTint="@color/card"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

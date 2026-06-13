@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@color/night"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Live Crypto Market"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Track prices, 24h change, market cap and favorites"
+        android:textColor="@color/text_soft"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_glow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/portfolioTitle"
+            android:text="Market Overview"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/text_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/marketSummary"
+            android:text="Loading live prices..."
+            android:textColor="@color/text_soft"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.unyt.cryptopulse.views.MiniChartView
+            android:id="@+id/marketChart"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/searchInput"
+        android:hint="Search coin by name or symbol"
+        android:textColor="@color/text_main"
+        android:textColorHint="@color/text_soft"
+        android:background="@drawable/input_bg"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/currencyGroup"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/usdRadio"
+                android:text="USD"
+                android:checked="true"
+                android:textColor="@color/text_main"
+                android:buttonTint="@color/cyan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/eurRadio"
+                android:text="EUR"
+                android:textColor="@color/text_main"
+                android:buttonTint="@color/cyan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/topTenCheck"
+            android:text="Top 10"
+            android:checked="false"
+            android:textColor="@color/text_main"
+            android:buttonTint="@color/cyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/filterLabel"
+        android:text="Minimum 24h movement: 0%"
+        android:textColor="@color/text_soft"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/changeSeek"
+        android:max="20"
+        android:progress="0"
+        android:progressTint="@color/cyan"
+        android:thumbTint="@color/cyan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:indeterminateTint="@color/cyan"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/coinRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

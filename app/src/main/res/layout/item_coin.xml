@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/card_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/coinImage"
+            android:layout_width="46dp"
+            android:layout_height="46dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/coinName"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/coinSymbol"
+                android:textColor="@color/text_soft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/coinPrice"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/coinChange"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/coinBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progressTint="@color/cyan"
+        android:progressBackgroundTint="#26344E"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+
+</LinearLayout>

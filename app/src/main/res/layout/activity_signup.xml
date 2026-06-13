@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="26dp"
+        android:gravity="center"
+        android:minHeight="720dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Create CryptoPulse Account"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Create a local account to access your crypto dashboard."
+            android:textColor="@color/text_soft"
+            android:layout_marginBottom="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:hint="Full name"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_soft"
+            android:background="@drawable/input_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_soft"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/passInput"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_soft"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/confirmPassInput"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_soft"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/createButton"
+            android:text="Create account"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
+        <Button
+            android:id="@+id/backLoginButton"
+            android:text="Back to login"
+            android:textColor="@color/cyan"
+            android:backgroundTint="@color/card"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
+    </LinearLayout>
+
+</ScrollView>

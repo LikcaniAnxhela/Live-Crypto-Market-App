@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="Theme.CryptoPulse" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:fontFamily">sans</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:statusBarColor">@color/night</item>
+        <item name="android:navigationBarColor">@color/night</item>
+
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryVariant">@color/night2</item>
+        <item name="colorAccent">@color/cyan</item>
+
+    </style>
+
+</resources>
