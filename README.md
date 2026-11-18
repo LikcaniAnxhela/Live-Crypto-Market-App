@@ -33,11 +33,11 @@ CryptoPulse Pro was designed with a dark/night-mode dashboard interface. The UI 
 
 | Login | Dashboard |
 |---|---|
-| <img src="login.png.png" width="250"> | <img src="dashboard.png.png" width="250"> |
+| <img src="screenshots/login.png" width="250"> | <img src="screenshots/dashboard.png" width="250"> |
 
 | Coin Details | CoinGecko Integration |
 |---|---|
-| <img src="coindetails.png.png" width="250"> | <img src="coingecko.png.png" width="250"> |
+| <img src="screenshots/coindetails.png" width="250"> | <img src="screenshots/coingecko.png" width="250"> |
 
 ---
 
@@ -198,7 +198,7 @@ It includes:
 
 #### ProfileFragment
 
-`ProfileFragment` displays the logged-in user’s name and email. It also includes a change password form, a contact developer email button, project feature information, and a logout button.
+`ProfileFragment` displays the logged-in userâ€™s name and email. It also includes a change password form, a contact developer email button, project feature information, and a logout button.
 
 ---
 
@@ -492,8 +492,8 @@ The project includes several interactive UI components.
 
 The application includes:
 
-* A “Remember me” checkbox on the login screen
-* A “Top 10” checkbox on the Home screen
+* A â€œRemember meâ€ checkbox on the login screen
+* A â€œTop 10â€ checkbox on the Home screen
 
 The Top 10 checkbox filters the cryptocurrency list to show only the top 10 coins from the filtered results.
 
