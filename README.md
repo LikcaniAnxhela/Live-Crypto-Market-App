@@ -29,6 +29,18 @@ CryptoPulse Pro was designed with a dark/night-mode dashboard interface. The UI 
 
 ---
 
+## Application Screenshots
+
+| Login | Dashboard |
+|---|---|
+| <img src="login.png.png" width="250"> | <img src="dashboard.png.png" width="250"> |
+
+| Coin Details | CoinGecko Integration |
+|---|---|
+| <img src="coindetails.png.png" width="250"> | <img src="coingecko.png.png" width="250"> |
+
+---
+
 ## Purpose of the Application
 
 The purpose of CryptoPulse Pro is to provide a simple and visually clear way for users to follow cryptocurrency prices, search through market data, and save favorite coins. The project also demonstrates important Android development concepts covered in the Mobile Application Development course, including:
