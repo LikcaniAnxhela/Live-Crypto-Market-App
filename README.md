@@ -731,3 +731,33 @@ The cryptocurrency market data is loaded from the CoinGecko API. If the API is t
 The chart displayed in the application is a visual demo chart and does not represent real historical price data.
 
 The local favorites database is stored on the device using Room.
+
+---
+
+## Installation and Setup
+
+### Requirements
+
+- Android Studio
+- Android SDK 35
+- Android device or emulator running Android 6.0 (API 23) or later
+- Internet connection for live cryptocurrency data
+
+### Run the Application
+
+1. Clone the repository:
+
+   git clone https://github.com/LikcaniAnxhela/Live-Crypto-Market-App.git
+
+2. Open the cloned project in Android Studio.
+3. Allow Gradle to synchronize the project dependencies.
+4. Select an Android emulator or connected Android device.
+5. Click Run to build and launch the application.
+6. Create a local account to access the cryptocurrency dashboard.
+
+### Notes
+
+- Cryptocurrency market data is retrieved from the CoinGecko API.
+- User accounts and favorites are stored locally using Room Database.
+- An internet connection is required to retrieve current market prices.
+
